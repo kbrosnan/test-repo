@@ -7,9 +7,9 @@ jobs:
     steps:
     - uses: konradpabjan/move-labeled-or-milestoned-issue@v2.0
       with:
-        action-token: "${{ secrets.MY_TOKEN }}"
+        action-token: "${{ secrets.CRASH_ACTION }}"
         project-url: "https://github.com/kbrosnan/test-repo/projects/1"
         column-name: "Needs triage"
         label-name: "b:crash"
-        columns-to-ignore: "In Review,Ready to deploy,Done"
+        columns-to-ignore: "*"
         
